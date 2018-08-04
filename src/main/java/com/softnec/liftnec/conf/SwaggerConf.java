@@ -1,4 +1,4 @@
-package conf;
+package com.softnec.liftnec.conf;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
