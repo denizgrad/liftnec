@@ -1,3 +1,5 @@
+package com.softnec.liftnec.model.remote;
+
 public class UserDto {
     String id;
     String firstName;
