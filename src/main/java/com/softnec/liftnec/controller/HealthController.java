@@ -1,6 +1,6 @@
 package com.softnec.liftnec.controller;
 
-import com.softnec.liftnec.model.domain.ExampleModel;
+import com.softnec.liftnec.model.domain.Elevator;
 import com.softnec.liftnec.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,14 +21,14 @@ public class HealthController
     }
     @RequestMapping("/healthCheck")
     public String healthCheck() {
-        ExampleModel em = repo.save(new ExampleModel());
+        Elevator em = repo.save(new Elevator());
         repo.delete(em);
         return "OK";
     }
 
     @RequestMapping("/getExampleModel")
-    public Iterable<ExampleModel> getExampleModel() {
-        ExampleModel em = repo.save(new ExampleModel());
+    public Iterable<Elevator> getExampleModel() {
+        Elevator em = repo.save(new Elevator());
         return repo.findAll();
     }
 }

@@ -1,7 +1,7 @@
 package com.softnec.liftnec.repository;
 
-import com.softnec.liftnec.model.domain.ExampleModel;
+import com.softnec.liftnec.model.domain.Elevator;
 import org.springframework.data.repository.CrudRepository;
 
-public interface ProductRepository extends CrudRepository<ExampleModel, Long> {
+public interface ProductRepository extends CrudRepository<Elevator, Long> {
 }
