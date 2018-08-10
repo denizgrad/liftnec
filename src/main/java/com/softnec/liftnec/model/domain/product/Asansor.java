@@ -1,10 +1,14 @@
-package com.softnec.liftnec.model.domain;
+package com.softnec.liftnec.model.domain.product;
+
+import com.softnec.liftnec.model.cons.TahrikTipi;
+import com.softnec.liftnec.model.domain.*;
+import com.softnec.liftnec.model.domain.part.*;
 
 import javax.persistence.Entity;
 import java.util.List;
 
 @Entity
-public class Asansor extends AModel{
+public class Asansor extends BaseModel {
 
     private double hizlanma;
     private int kapasiteKg;
@@ -18,4 +22,7 @@ public class Asansor extends AModel{
     private List<Kabin> kabin;
     private List<Ray> ray;
     private List<KumandaPanosu> kumandaPanosu;
+
+
+
 }

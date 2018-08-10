@@ -1,4 +1,4 @@
-package com.softnec.liftnec.model.domain;
+package com.softnec.liftnec.model.cons;
 
 public enum TahrikTipi {
     Makine_Daireli(1),

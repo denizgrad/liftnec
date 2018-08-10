@@ -11,13 +11,12 @@ import javax.persistence.*;
 import java.util.Date;
 
 @MappedSuperclass
-public abstract class AModel {
+public abstract class BaseModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "id",unique=true, nullable = false)
-
     private Long id;
 
     @Temporal(TemporalType.TIMESTAMP)
@@ -30,10 +29,8 @@ public abstract class AModel {
     @UpdateTimestamp
     private Date updatedAt;
 
-    public AModel() {
+    public BaseModel() {
     }
-
-    // Getters and Setters (Omitted for brevity)
 
     public Date getCreatedAt() {
         return createdAt;
