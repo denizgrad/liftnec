@@ -1,0 +1,16 @@
+#see containers
+sudo docker ps -a
+
+# build image
+sudo mvn clean package dockerfile:build
+
+#remove all exited containers
+sudo docker rm `sudo docker ps -aq -f status=exited`
+
+#push docker image
+sudo docker push denizgrad/liftnec:latest
+
+# run with localhost db
+sudo docker run -p 8080:8080 --net="host" --name liftnec denizgrad/liftnec
+
+
