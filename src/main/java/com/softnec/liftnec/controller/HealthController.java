@@ -16,7 +16,6 @@ public class HealthController
 
     @RequestMapping("/")
     public String home() {
-
         return "SoftNec's first running micro-service docker container";
     }
     @RequestMapping("/healthCheck")
